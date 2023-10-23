@@ -1,0 +1,106 @@
+.sell {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.sell__header h3 {
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+.sell__header span {
+    color: var(--color-orange);
+}
+
+.sell__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+.sell__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30rem;
+    margin: 3rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(321.671px);
+    border-radius: 2rem;
+    padding: 2px 8px;
+}
+.sell__img img {
+    width: 6.5rem;
+    height: 6.5rem;
+    margin: 0.5rem 0;
+    border-radius: 50%;
+}
+
+.sell__text {
+    text-align: center;
+    color: var(--color-gray5);
+}
+.sell__text h5 {
+    font-size: 1.75rem;
+    line-height: 4rem;
+}
+.sell__text p {
+    font-size: 1.5rem;
+}
+.sell__box-icon {
+    position: relative;
+    width: 4.8rem;
+    height: 4.8rem;
+    margin-right: 0.5rem;
+    background: var(--color-orange);
+    box-shadow: 0px 8px 10px rgba(240, 193, 80, 0.2);
+    border-radius: 0.9rem;
+}
+.sell__box-icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+
+/* sell btn */
+.sell__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sell__button-btn {
+    display: grid;
+    place-items: center;
+    background-color: var(--color-orange);
+    width: 21.5rem;
+    height: 5.7rem;
+    border-radius: 1rem;
+    color: #141414;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+.sell__button-btn:hover {
+    background-color: var(--color-orange2);
+}
+
+@media only screen and (max-width: 768px) {
+    .sell__button-btn {
+        width: 16rem;
+        height: 5rem;
+        border-radius: 1rem;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .sell__header h3 {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,104 @@
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: #383737b5;
+  border-radius: 5rem;
+}
+
+body {
+    color: #fff;
+    background-color: #000;
+    font-size: 1.5rem;
+    font-family: "Verdana", "Font Awesome 5 Free", "Geneva", Tahoma, sans-serif;
+
+    --color-orange: #f0c150;
+    --color-orange2: #dcbd73;
+
+    --color-gray: #898989;
+    --color-gray2: #e3e2e2;
+    --color-gray3: #5b5a5a;
+    --color-gray4: #7e7e7e;
+    --color-gray5: #d0d0d0;
+    --color-gray6: #191919;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* @media only screen and (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  @media only screen and (min-width: 1400px) {
+    .container {
+      max-width: 1320px;
+    }
+  } */
+
+/* margin padding helper */
+.pt-20 {
+    padding-top: 2rem;
+}
+.pb-20 {
+    padding-bottom: 2rem;
+}
+.pt-40 {
+    padding-top: 4rem;
+}
+.pb-40 {
+    padding-bottom: 4rem;
+}
+.mt-20 {
+    margin-top: 2rem;
+}
+.mb-20 {
+    margin-bottom: 2rem;
+}
+.mt-50 {
+    margin-top: 5rem;
+}
+.mb-50 {
+    margin-bottom: 5rem;
+}
+.mt-60 {
+    margin-top: 6rem;
+}
+.mb-60 {
+    margin-bottom: 6rem;
+}

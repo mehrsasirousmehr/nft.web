@@ -1,0 +1,193 @@
+.popular {
+    width: 100%;
+}
+
+.popular__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+.popular__header-h3 {
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+.popular__header-h3 span {
+    color: var(--color-orange);
+}
+.popular__p {
+    position: relative;
+    font-size: 2rem;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+.popular__p:hover {
+    color: var(--color-orange);
+}
+
+.popular__p:hover > .popular__arrow {
+    border-color: var(--color-orange);
+    right: -1.9rem;
+}
+
+.popular__arrow {
+    position: absolute;
+    top: 30%;
+    right: -1.5rem;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(-45deg);
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+.populars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+.populars__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30rem;
+    height: 44rem;
+    margin: 3rem 1.8rem;
+    padding: 1rem;
+    background: linear-gradient(179.33deg, rgba(45, 44, 44, 0.72) 38.72%, #0b0a0a 148.23%);
+    border: 2px solid var(--color-gray3);
+    border-radius: 2.4rem;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+.populars__box:hover {
+    transform: scale(1.09);
+}
+
+.popular__nft {
+    position: relative;
+    height: 39rem;
+}
+
+/* img 3 */
+.popular__nft-blur3 img {
+    position: absolute;
+    top: 0;
+    left: -10rem;
+}
+.img-blur-3 {
+    position: absolute;
+    top: 1.5rem;
+    left: -1rem;
+}
+
+/* img4 */
+.popular__nft-blur4 img {
+    position: absolute;
+    top: -0.5rem;
+    left: -10rem;
+}
+.img-blur-4 {
+    position: absolute;
+    top: 2rem;
+    left: -1rem;
+}
+
+/* img 5 */
+.popular__nft-blur5 img {
+    position: absolute;
+    top: -0.5rem;
+    left: -8rem;
+}
+.img-blur-5 {
+    position: absolute;
+    top: 1.2rem;
+    left: -1.7rem;
+}
+
+/* body box */
+.popular__body {
+    position: relative;
+}
+.popular__body-box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -1rem;
+    right: -15rem;
+    width: 30rem;
+    height: 12rem;
+    background: rgba(196, 196, 196, 0.27);
+    border-radius: 0.8rem;
+}
+
+.popular__body-header {
+    font-size: 2rem;
+    font-weight: 50;
+    text-align: center;
+    padding: 1rem;
+}
+.popular__body-price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+.popular__body-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4rem;
+    color: var(--color-gray4);
+}
+
+@media only screen and (max-width: 576px) {
+    .popular__header-h3 {
+        font-size: 2.5rem;
+    }
+
+    .popular__p {
+        position: relative;
+        font-size: 1.5rem;
+    }
+    .popular__arrow {
+        border-width: 0 2px 2px 0;
+        right: -1rem;
+    }
+
+    .popular__body-header {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    .popular__body-price {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+    .popular__body-text {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.1rem;
+    }
+}

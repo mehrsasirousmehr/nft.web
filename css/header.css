@@ -1,0 +1,225 @@
+header {
+    width: 100%;
+}
+
+.header__banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__cta {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 2rem 0;
+}
+
+.header__subtitle {
+    font-size: 5.5rem;
+    font-weight: 200;
+    width: 100%;
+    line-height: 8rem;
+}
+.header__span--orange {
+    color: var(--color-orange);
+    font-weight: 550;
+}
+
+.header__text {
+    width: 55rem;
+    font-weight: 200;
+    font-size: 2rem;
+    line-height: 3.5rem;
+    color: var(--color-gray);
+    margin: 3rem 0 5.5rem 0;
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 50rem;
+}
+.header__btn {
+    text-align: center;
+    background-color: var(--color-orange);
+    padding: 17px 20px;
+    border-radius: 1rem;
+    color: #141414;
+    font-size: 2.1rem;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+.header__btn:hover {
+    background-color: var(--color-orange2);
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.details-i {
+    font-size: 4rem;
+    padding-right: 1rem;
+}
+
+.header__nft {
+    position: relative;
+    width: 33rem;
+}
+.header__nft--blur {
+    width: 33rem;
+    height: 40rem;
+    background: linear-gradient(179.97deg, #2d2c2c 42.59%, rgba(11, 10, 10, 0) 164.81%);
+    border-radius: 2.4rem;
+}
+.header__nft--blur img {
+    position: absolute;
+    top: 10px;
+    right: 2px;
+}
+.img-blur {
+    position: absolute;
+    top: -1.5rem;
+    left: 1rem;
+}
+.z-index-imag {
+    z-index: 1;
+}
+
+/* box price */
+.box {
+    position: absolute;
+    width: 26rem;
+    height: 16rem;
+    right: 120px;
+    top: 335px;
+    text-align: center;
+    background: rgba(196, 196, 196, 0.31);
+    backdrop-filter: blur(14px);
+    border-radius: 9px;
+    z-index: 2;
+}
+.box__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.box__price {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3.5rem 0;
+    font-size: 2rem;
+}
+.box__btn {
+    width: 19.4rem;
+    height: 5.1rem;
+    margin: 0 auto;
+    border: 3px solid #515151;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 21px;
+    display: grid;
+    place-items: center;
+    color: var(--color-orange);
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .header__subtitle {
+        font-size: 4rem;
+    }
+
+    .header__text {
+        font-size: 1.5rem;
+        width: 45rem;
+    }
+
+    .header__btn {
+        text-align: center;
+        background-color: var(--color-orange);
+        padding: 1.2rem 1.2rem;
+        border-radius: 1rem;
+        color: #141414;
+        font-weight: 500;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 60%;
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
+    .details-i {
+        font-size: 3.5rem;
+        padding-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .header__banner {
+        flex-direction: column;
+    }
+    .header__cta {
+        text-align: center;
+        order: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+    }
+    .header__nft {
+        display: none;
+    }
+
+    .header__text {
+        text-align: center;
+    }
+
+    .header__wrap {
+        text-align: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .details {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .header__wrap {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header__subtitle {
+        font-size: 3.3rem;
+        line-height: 5rem;
+        width: 100%;
+    }
+
+    .header__text {
+        width: 100%;
+    }
+    .details {
+        width: 100%;
+        justify-content: center;
+        margin-top: 2.5rem;
+        font-size: 1.7rem;
+    }
+}

@@ -1,0 +1,111 @@
+.info {
+    width: 100%;
+    margin: 20rem 0 10rem 0;
+}
+
+.info__section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.info__nft {
+    position: relative;
+}
+.info__nft-blur {
+    width: 31rem;
+    height: 38rem;
+    background: linear-gradient(179.97deg, #2d2c2c 42.59%, rgba(11, 10, 10, 0) 164.81%);
+    border-radius: 2.4rem;
+}
+.info__nft-blur img {
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+}
+.img-blur-2 {
+    position: absolute;
+    top: 2.5rem;
+    left: -2rem;
+}
+
+.info__text {
+    width: 45%;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+.info__h2 {
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 139%;
+}
+.info__p {
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 139%;
+    padding: 4rem 0;
+    color: var(--color-gray2);
+}
+.info__btn {
+    font-size: 2rem;
+    padding: 16px 20px;
+    color: var(--color-orange);
+    background-color: transparent;
+    border: 3px solid var(--color-orange);
+    border-radius: 1.2rem;
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+.info__btn:hover{
+    box-shadow: inset 200px 0 0 0 var(--color-orange);
+    color: #2d2c2c;
+}
+
+@media only screen and (max-width: 992px) {
+    .info {
+        margin: 10rem 0;
+    }
+
+    .info__h2 {
+        font-size: 4rem;
+    }
+
+    .info__btn {
+        font-size: 2rem;
+        padding: 1.5rem 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .info__section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .info__text {
+        margin-top: 4rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .info__h2 {
+    font-weight: 200;
+
+        font-size: 3rem;
+    }
+
+    .info__btn {
+        font-size: 1.5rem;
+        padding: 1.2rem 2rem;
+    }
+}
